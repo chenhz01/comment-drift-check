@@ -2,6 +2,8 @@
 
 Flags comments that drifted from code: docstring-documented parameters that no longer exist, documented return names the function never returns, and documented exceptions the function never raises — plus the inverse (undocumented params and raises). Pure `ast`, deterministic, offline.
 
+<p align="center"><img src="docs/demo.gif" alt="demo" width="720"></p>
+
 ## Problem
 
 Docstrings rot silently. A signature gains a parameter; the docstring keeps describing the old world. Six months later a maintainer reads the docstring, trusts it, and writes a bug. Existing linters check docstring *style* (format, coverage) but almost none check docstring *truth* against what the function actually does — and none do it as a diffable, rule-numbered report.
